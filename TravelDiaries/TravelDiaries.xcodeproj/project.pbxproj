@@ -14,7 +14,8 @@
 		43544E76213D426100179EF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43544E74213D426100179EF8 /* LaunchScreen.storyboard */; };
 		43544E81213D426100179EF8 /* TravelDiariesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43544E80213D426100179EF8 /* TravelDiariesTests.swift */; };
 		43544E8C213D512E00179EF8 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43544E8B213D512E00179EF8 /* Service.swift */; };
-		B59EF0577EA7575320B48CD1 /* Pods_TravelDiariesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2697A7141508F6923061FDA4 /* Pods_TravelDiariesTests.framework */; };
+		43B88586213D5F0F00DCDA24 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43B88585213D5F0F00DCDA24 /* Alamofire.framework */; };
+		43B88588213D5F5100DCDA24 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43B88587213D5F5100DCDA24 /* Alamofire.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,9 +29,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F4AFD2368D0AD7E6F862704 /* Pods-TravelDiaries-TravelDiariesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelDiaries-TravelDiariesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TravelDiaries-TravelDiariesTests/Pods-TravelDiaries-TravelDiariesTests.debug.xcconfig"; sourceTree = "<group>"; };
 		1853323A651A2C346FB03FC7 /* Pods_TravelDiaries.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TravelDiaries.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2697A7141508F6923061FDA4 /* Pods_TravelDiariesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TravelDiariesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B2072A3DD62C0E4AA6C5B1B /* Pods-TravelDiaries.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelDiaries.release.xcconfig"; path = "Pods/Target Support Files/Pods-TravelDiaries/Pods-TravelDiaries.release.xcconfig"; sourceTree = "<group>"; };
+		434932CB213D5C2300A7242D /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		43544E65213D425E00179EF8 /* TravelDiaries.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelDiaries.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43544E68213D425E00179EF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43544E6A213D425E00179EF8 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
@@ -41,9 +44,12 @@
 		43544E80213D426100179EF8 /* TravelDiariesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelDiariesTests.swift; sourceTree = "<group>"; };
 		43544E82213D426100179EF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		43544E8B213D512E00179EF8 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
-		674172C80426E11FFCD9ACEA /* Pods-TravelDiariesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelDiariesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TravelDiariesTests/Pods-TravelDiariesTests.release.xcconfig"; sourceTree = "<group>"; };
+		43544E93213D5A2600179EF8 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		43B88585213D5F0F00DCDA24 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		43B88587213D5F5100DCDA24 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CFB385B222741C56CDA7ABB /* Pods_TravelDiaries_TravelDiariesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TravelDiaries_TravelDiariesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A55E652A39977591FB595C17 /* Pods-TravelDiaries-TravelDiariesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelDiaries-TravelDiariesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TravelDiaries-TravelDiariesTests/Pods-TravelDiaries-TravelDiariesTests.release.xcconfig"; sourceTree = "<group>"; };
 		A89EBB5F5C4A2413C758F18A /* Pods-TravelDiaries.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelDiaries.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TravelDiaries/Pods-TravelDiaries.debug.xcconfig"; sourceTree = "<group>"; };
-		D1F935D960C26E742BD62608 /* Pods-TravelDiariesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelDiariesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TravelDiariesTests/Pods-TravelDiariesTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43B88586213D5F0F00DCDA24 /* Alamofire.framework in Frameworks */,
 				3AD3A80234EB8EF5B8867356 /* Pods_TravelDiaries.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -59,7 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B59EF0577EA7575320B48CD1 /* Pods_TravelDiariesTests.framework in Frameworks */,
+				43B88588213D5F5100DCDA24 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,8 +118,13 @@
 		69E13B61248587603A4A6B8F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				43B88587213D5F5100DCDA24 /* Alamofire.framework */,
+				43B88585213D5F0F00DCDA24 /* Alamofire.framework */,
+				434932CB213D5C2300A7242D /* Alamofire.framework */,
+				43544E93213D5A2600179EF8 /* Alamofire.framework */,
 				1853323A651A2C346FB03FC7 /* Pods_TravelDiaries.framework */,
 				2697A7141508F6923061FDA4 /* Pods_TravelDiariesTests.framework */,
+				8CFB385B222741C56CDA7ABB /* Pods_TravelDiaries_TravelDiariesTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -122,8 +134,8 @@
 			children = (
 				A89EBB5F5C4A2413C758F18A /* Pods-TravelDiaries.debug.xcconfig */,
 				2B2072A3DD62C0E4AA6C5B1B /* Pods-TravelDiaries.release.xcconfig */,
-				D1F935D960C26E742BD62608 /* Pods-TravelDiariesTests.debug.xcconfig */,
-				674172C80426E11FFCD9ACEA /* Pods-TravelDiariesTests.release.xcconfig */,
+				0F4AFD2368D0AD7E6F862704 /* Pods-TravelDiaries-TravelDiariesTests.debug.xcconfig */,
+				A55E652A39977591FB595C17 /* Pods-TravelDiaries-TravelDiariesTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -139,6 +151,7 @@
 				43544E61213D425E00179EF8 /* Sources */,
 				43544E62213D425E00179EF8 /* Frameworks */,
 				43544E63213D425E00179EF8 /* Resources */,
+				708300AF5637DEF24134343B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -153,11 +166,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 43544E88213D426100179EF8 /* Build configuration list for PBXNativeTarget "TravelDiariesTests" */;
 			buildPhases = (
-				DDEEBFA2F2CD52E1F7C56080 /* [CP] Check Pods Manifest.lock */,
 				43544E78213D426100179EF8 /* Sources */,
 				43544E79213D426100179EF8 /* Frameworks */,
 				43544E7A213D426100179EF8 /* Resources */,
-				8587965FBCC633FFA9E165E5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -245,13 +256,13 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8587965FBCC633FFA9E165E5 /* [CP] Embed Pods Frameworks */ = {
+		708300AF5637DEF24134343B /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-TravelDiariesTests/Pods-TravelDiariesTests-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-TravelDiaries/Pods-TravelDiaries-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -260,25 +271,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TravelDiariesTests/Pods-TravelDiariesTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DDEEBFA2F2CD52E1F7C56080 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-TravelDiariesTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TravelDiaries/Pods-TravelDiaries-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -375,9 +368,18 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/**",
+					"$(inherited)",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/**",
+					"$(inherited)",
+				);
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "$(inherited)";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -429,8 +431,17 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/**",
+					"$(inherited)",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/**",
+					"$(inherited)",
+				);
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "$(inherited)";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -446,10 +457,15 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = TravelDiaries/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/**",
 					"$(inherited)",
-					"@executable_path/Frameworks",
+				);
+				INFOPLIST_FILE = TravelDiaries/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/**",
+					"$(inherited)",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = wipro.TravelDiaries;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -467,10 +483,15 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = TravelDiaries/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/**",
 					"$(inherited)",
-					"@executable_path/Frameworks",
+				);
+				INFOPLIST_FILE = TravelDiaries/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/**",
+					"$(inherited)",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = wipro.TravelDiaries;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -482,17 +503,13 @@
 		};
 		43544E89213D426100179EF8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D1F935D960C26E742BD62608 /* Pods-TravelDiariesTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = TravelDiariesTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = wipro.TravelDiariesTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -503,17 +520,13 @@
 		};
 		43544E8A213D426100179EF8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 674172C80426E11FFCD9ACEA /* Pods-TravelDiariesTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = TravelDiariesTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = wipro.TravelDiariesTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
