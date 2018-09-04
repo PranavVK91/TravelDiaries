@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		3AD3A80234EB8EF5B8867356 /* Pods_TravelDiaries.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1853323A651A2C346FB03FC7 /* Pods_TravelDiaries.framework */; };
+		4337D3EB213E493F00D5A15F /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4337D3EA213E493F00D5A15F /* SwiftyJSON.framework */; };
+		4337D3ED213E64E700D5A15F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4337D3EC213E64E700D5A15F /* Constants.swift */; };
+		4337D3EF213E6DDC00D5A15F /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4337D3EE213E6DDC00D5A15F /* SDWebImage.framework */; };
+		4337D3F1213E709400D5A15F /* PureLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4337D3F0213E709400D5A15F /* PureLayout.framework */; };
 		43544E69213D425E00179EF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43544E68213D425E00179EF8 /* AppDelegate.swift */; };
 		43544E6B213D425E00179EF8 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43544E6A213D425E00179EF8 /* HomeVC.swift */; };
 		43544E73213D426100179EF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43544E72213D426100179EF8 /* Assets.xcassets */; };
@@ -33,6 +37,10 @@
 		1853323A651A2C346FB03FC7 /* Pods_TravelDiaries.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TravelDiaries.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2697A7141508F6923061FDA4 /* Pods_TravelDiariesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TravelDiariesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B2072A3DD62C0E4AA6C5B1B /* Pods-TravelDiaries.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelDiaries.release.xcconfig"; path = "Pods/Target Support Files/Pods-TravelDiaries/Pods-TravelDiaries.release.xcconfig"; sourceTree = "<group>"; };
+		4337D3EA213E493F00D5A15F /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4337D3EC213E64E700D5A15F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4337D3EE213E6DDC00D5A15F /* SDWebImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SDWebImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4337D3F0213E709400D5A15F /* PureLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PureLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		434932CB213D5C2300A7242D /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		43544E65213D425E00179EF8 /* TravelDiaries.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelDiaries.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43544E68213D425E00179EF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +65,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4337D3F1213E709400D5A15F /* PureLayout.framework in Frameworks */,
+				4337D3EF213E6DDC00D5A15F /* SDWebImage.framework in Frameworks */,
+				4337D3EB213E493F00D5A15F /* SwiftyJSON.framework in Frameworks */,
 				43B88586213D5F0F00DCDA24 /* Alamofire.framework in Frameworks */,
 				3AD3A80234EB8EF5B8867356 /* Pods_TravelDiaries.framework in Frameworks */,
 			);
@@ -99,6 +110,7 @@
 				43544E68213D425E00179EF8 /* AppDelegate.swift */,
 				43544E8B213D512E00179EF8 /* Service.swift */,
 				43544E6A213D425E00179EF8 /* HomeVC.swift */,
+				4337D3EC213E64E700D5A15F /* Constants.swift */,
 				43544E72213D426100179EF8 /* Assets.xcassets */,
 				43544E74213D426100179EF8 /* LaunchScreen.storyboard */,
 				43544E77213D426100179EF8 /* Info.plist */,
@@ -118,6 +130,9 @@
 		69E13B61248587603A4A6B8F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4337D3F0213E709400D5A15F /* PureLayout.framework */,
+				4337D3EE213E6DDC00D5A15F /* SDWebImage.framework */,
+				4337D3EA213E493F00D5A15F /* SwiftyJSON.framework */,
 				43B88587213D5F5100DCDA24 /* Alamofire.framework */,
 				43B88585213D5F0F00DCDA24 /* Alamofire.framework */,
 				434932CB213D5C2300A7242D /* Alamofire.framework */,
@@ -264,10 +279,16 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-TravelDiaries/Pods-TravelDiaries-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/PureLayout/PureLayout.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PureLayout.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -284,6 +305,7 @@
 				43544E6B213D425E00179EF8 /* HomeVC.swift in Sources */,
 				43544E69213D425E00179EF8 /* AppDelegate.swift in Sources */,
 				43544E8C213D512E00179EF8 /* Service.swift in Sources */,
+				4337D3ED213E64E700D5A15F /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,7 +484,10 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = TravelDiaries/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/**",
 					"$(inherited)",
@@ -488,7 +513,10 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = TravelDiaries/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/**",
 					"$(inherited)",
@@ -509,7 +537,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = TravelDiariesTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = wipro.TravelDiariesTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -526,7 +558,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = TravelDiariesTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = wipro.TravelDiariesTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
