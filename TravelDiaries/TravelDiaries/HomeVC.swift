@@ -47,15 +47,15 @@ class HomeVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     func setupTableView()
     {
-        let barHeight: CGFloat = UIApplication.shared.statusBarFrame.size.height
-        let displayWidth: CGFloat = self.view.frame.width
-        let displayHeight: CGFloat = self.view.frame.height
-
-        placeTableView = UITableView(frame: CGRect(x: 0, y: 40, width: displayWidth, height: displayHeight - barHeight))
+        placeTableView = UITableView(forAutoLayout: ())
         placeTableView.register(PlaceTableViewCell.self, forCellReuseIdentifier: "PlaceTableViewCell")
         placeTableView.dataSource = self
         placeTableView.delegate = self
         self.view.addSubview(placeTableView)
+        placeTableView.autoPinEdge(toSuperviewEdge: .bottom)
+        placeTableView.autoPinEdge(toSuperviewEdge: .right)
+        placeTableView.autoPinEdge(toSuperviewEdge: .left)
+        placeTableView.autoPinEdge(.top, to: .top, of: self.view, withOffset: 40)
         placeTableView.isHidden = true
     }
 
@@ -72,10 +72,18 @@ class HomeVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "PlaceTableViewCell", for: indexPath) as! PlaceTableViewCell
 
-        cell.titleLabel.frame = CGRect(x: 0.0, y: 0.0, width: cell.frame.width, height: 50)
-        cell.descLabel.frame = CGRect(x: 0.0, y:  (cell.titleLabel.frame.height), width: cell.frame.width, height: 100)
-        cell.placeImageView.frame = CGRect(x: 0.0, y: 0.0, width: cell.frame.width, height: cell.frame.height)
+        cell.titleLabel.autoPinEdge(toSuperviewEdge: .top)
+        cell.titleLabel.autoPinEdge(toSuperviewEdge: .right)
+        cell.titleLabel.autoPinEdge(toSuperviewEdge: .left)
+        cell.titleLabel.autoSetDimensions(to: CGSize(width: self.view.frame.width, height: 50))
 
+        cell.descLabel.autoPinEdge(toSuperviewEdge: .right)
+        cell.descLabel.autoPinEdge(toSuperviewEdge: .left)
+        cell.descLabel.autoSetDimensions(to: CGSize(width: self.view.frame.width, height: 100))
+        cell.descLabel.autoCenterInSuperview()
+
+        cell.placeImageView.autoPinEdgesToSuperviewEdges()
+        
         let placeDetails = placeModelObj.Info[indexPath.row]
         cell.titleLabel.text = placeDetails.title
         cell.descLabel.text = placeDetails.desc
@@ -116,8 +124,12 @@ class HomeVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     }
 
     func setNavBarToTheView(title: String) {
-        let navBar: UINavigationBar = UINavigationBar(frame: CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: 80.0))
+        let navBar: UINavigationBar = UINavigationBar()
         self.view.addSubview(navBar)
+        navBar.autoPinEdge(toSuperviewEdge: .top)
+        navBar.autoPinEdge(toSuperviewEdge: .right)
+        navBar.autoPinEdge(toSuperviewEdge: .left)
+        navBar.autoSetDimensions(to: CGSize(width: self.view.frame.width, height: 80))
         let navItem = UINavigationItem(title: title)
         navBar.setItems([navItem], animated: true)
     }
