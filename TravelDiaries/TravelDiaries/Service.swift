@@ -17,7 +17,7 @@ func makeWebServiceCall(urlString : String ,successHandler : @escaping(String,[S
 
         guard response.error == nil else {
             print("Webservice call failed")
-            failureHandler("failure" as! Error)
+            failureHandler(response.error!)
             return
         }
 
