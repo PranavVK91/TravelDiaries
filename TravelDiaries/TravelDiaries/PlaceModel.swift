@@ -29,8 +29,10 @@ class PlaceModel: NSObject {
             let imageHref = (dict["imageHref"] as? String) ?? ""
             print("imageHref == \(imageHref)")
 
-            let infoObj = InfoModel(title: subTitle, desc: description, url: imageHref)
-            Info.append(infoObj)
+            if subTitle != "" || description != "" || imageHref != "" {
+                let infoObj = InfoModel(title: subTitle, desc: description, url: imageHref)
+                Info.append(infoObj)
+            }
         }
     }
 

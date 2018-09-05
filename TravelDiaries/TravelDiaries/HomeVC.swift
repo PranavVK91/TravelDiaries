@@ -15,14 +15,20 @@ class HomeVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     //MARK :- Variable and constants
 
     var placeTableView: UITableView!
+    var uiRefresher: UIRefreshControl!
     var placeModelObj = PlaceModel()
+    var isFirstTime = true
 
     //MARK :- Override Methods
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .white
-        
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+
         let loader = UIActivityIndicatorView(forAutoLayout: ())
         loader.color = .black
         loader.frame = CGRect(x: 10, y: 10, width: 100, height: 100)
@@ -30,7 +36,16 @@ class HomeVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         loader.startAnimating()
         loader.autoCenterInSuperview()
         setupTableView()
-        invokeWebServiceAPI()
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        if connectedToNetwork() {
+            invokeWebServiceAPI()
+        }
+        else {
+            showAlert(title: "No Internet Connectivity", Message: "Please connect to mobile data or WiFi")
+        }
     }
 
     //MARK :- Setup Initial Views
@@ -38,10 +53,11 @@ class HomeVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     func setupHomePage(placeDetails: [String:AnyObject])
     {
         placeModelObj = PlaceModel(placeDetails: placeDetails)
+        weak var weakself = self
         DispatchQueue.main.async {
-            self.setNavBarToTheView(title: self.placeModelObj.title)
-            self.placeTableView.isHidden = false
-            self.placeTableView.reloadData()
+            weakself?.setNavBarToTheView(title: self.placeModelObj.title)
+            weakself?.placeTableView.isHidden = false
+            weakself?.placeTableView.reloadData()
         }
     }
 
@@ -57,6 +73,12 @@ class HomeVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         placeTableView.autoPinEdge(toSuperviewEdge: .left)
         placeTableView.autoPinEdge(.top, to: .top, of: self.view, withOffset: 40)
         placeTableView.isHidden = true
+
+        uiRefresher = UIRefreshControl()
+        self.placeTableView.addSubview(uiRefresher)
+        uiRefresher.attributedTitle = NSAttributedString(string: "Pull to refresh")
+        uiRefresher.tintColor = .black
+        uiRefresher.addTarget(self, action: #selector(refreshUI), for: .valueChanged)
     }
 
     //MARK :- TableView DataSource Methods
@@ -66,7 +88,18 @@ class HomeVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return placeModelObj.Info.count
+        if isFirstTime && placeModelObj.Info.count > 0 {
+            isFirstTime = false
+            let screenSize: CGRect = UIScreen.main.bounds
+            let screenHeight = screenSize.height
+
+            let count: Int = Int((screenHeight / 300).rounded(.awayFromZero))
+
+            return count
+        }
+        else {
+            return placeModelObj.Info.count
+        }
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -117,8 +150,9 @@ class HomeVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         }, failureHandler: {
             (status) in
             print("failed")
+            weak var weakself = self
             DispatchQueue.main.async {
-                self.showAlert(title: "Alert", Message: "Connectivity issue")
+                weakself?.showAlert(title: "Alert", Message: "Connectivity issue")
             }
         })
     }
@@ -132,6 +166,12 @@ class HomeVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         navBar.autoSetDimensions(to: CGSize(width: self.view.frame.width, height: 80))
         let navItem = UINavigationItem(title: title)
         navBar.setItems([navItem], animated: true)
+    }
+
+    @objc func refreshUI()
+    {
+        placeTableView.reloadData()
+        uiRefresher.endRefreshing()
     }
 
     func showAlert(title : String , Message : String)

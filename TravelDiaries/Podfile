@@ -13,8 +13,12 @@ target 'TravelDiaries' do
 
 end
 
-#  target 'TravelDiariesTests' do
-#      inherit! :search_paths
-#    # Pods for testing
-#    pod 'Alamofire', '~> 4.7'
-#  end
+ target 'TravelDiariesTests' do
+  use_frameworks!
+      inherit! :search_paths
+    # Pods for testing
+  pod 'Alamofire', '~> 4.7'
+  pod 'SwiftyJSON', '~> 4.0'
+  pod 'SDWebImage'
+  pod 'PureLayout'
+ end

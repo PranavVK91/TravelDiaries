@@ -9,6 +9,24 @@
 			<key>orderHint</key>
 			<integer>5</integer>
 		</dict>
+		<key>TravelDiariesTests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>43544E64213D425E00179EF8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>43544E7B213D426100179EF8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 	</dict>
 </dict>
 </plist>

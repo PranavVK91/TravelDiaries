@@ -12,7 +12,7 @@ import SwiftyJSON
 
 func makeWebServiceCall(urlString : String ,successHandler : @escaping(String,[String: AnyObject])->Void, failureHandler: @escaping(Error)->Void) {
     let header: [String:String] = ["Content-Type" : "application/json"]
-    var json = [String:AnyObject]()
+    //var json = [String:AnyObject]()
     Alamofire.request(urlString, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: header).responseString{ (response) in
 
         guard response.error == nil else {
@@ -32,7 +32,7 @@ func makeWebServiceCall(urlString : String ,successHandler : @escaping(String,[S
         if let data = jsonText?.data(using: String.Encoding.utf8) {
 
             do {
-                json = (try JSONSerialization.jsonObject(with: data, options: .allowFragments) as? [String : AnyObject])!
+                let json = (try JSONSerialization.jsonObject(with: data, options: .allowFragments) as? [String : AnyObject])!
                 successHandler("Success",json)
             }
             catch let error as NSError {
