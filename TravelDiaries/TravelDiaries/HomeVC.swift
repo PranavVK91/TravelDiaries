@@ -24,10 +24,6 @@ class HomeVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .white
-    }
-
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
 
         let loader = UIActivityIndicatorView(forAutoLayout: ())
         loader.color = .black
