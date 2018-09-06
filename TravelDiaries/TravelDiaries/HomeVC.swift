@@ -18,6 +18,7 @@ class HomeVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     var uiRefresher: UIRefreshControl!
     var placeModelObj = PlaceModel()
     var isFirstTime = true
+    var canMakeApiCall = true
 
     //MARK :- Override Methods
 
@@ -141,11 +142,14 @@ class HomeVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     func invokeWebServiceAPI()
     {
+       self.canMakeApiCall = false
        makeWebServiceCall(urlString: travelUrl, successHandler: { (status, placeDetails) in
+        self.canMakeApiCall = true
         self.setupHomePage(placeDetails: placeDetails)
         }, failureHandler: {
             (status) in
             print("failed")
+            self.canMakeApiCall = true
             weak var weakself = self
             DispatchQueue.main.async {
                 weakself?.showAlert(title: "Alert", Message: "Connectivity issue")
@@ -166,7 +170,12 @@ class HomeVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @objc func refreshUI()
     {
-        placeTableView.reloadData()
+        if connectedToNetwork() && canMakeApiCall {
+            invokeWebServiceAPI()
+        }
+        else {
+            showAlert(title: "No Internet Connectivity", Message: "Please connect to mobile data or WiFi")
+        }
         uiRefresher.endRefreshing()
     }
 
