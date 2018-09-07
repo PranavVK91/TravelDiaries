@@ -44,6 +44,8 @@ class TravelDiariesTests: XCTestCase {
 
         self.vcForTest.loadView()
         self.vcForTest.viewDidLoad()
+        self.vcForTest.viewWillAppear(true)
+
     }
     
     override func tearDown() {
@@ -51,20 +53,8 @@ class TravelDiariesTests: XCTestCase {
         super.tearDown()
          testPlace = nil
     }
-    
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
 
-    func testHasTV()
+    func testHasTableView()
     {
         XCTAssertNotNil(vcForTest.placeTableView)
     }
@@ -73,5 +63,19 @@ class TravelDiariesTests: XCTestCase {
     {
         XCTAssertNotNil(vcForTest.placeTableView.delegate)
         XCTAssertNotNil(vcForTest.placeTableView.dataSource)
+    }
+
+    func testAddPlaceDetails() {
+       XCTAssertNotNil(vcForTest.placeModelObj)
+       XCTAssertTrue(vcForTest.placeModelObj.Info.count > 0)
+    }
+
+    func testRestAPi(){
+        makeWebServiceCall(urlString: travelUrl, successHandler: { (status, placeDetails) in
+           XCTAssertTrue(status == "Success")
+        }, failureHandler: {
+            (status) in
+            XCTAssertTrue(status.localizedDescription.contains("fail"))
+        })
     }
 }

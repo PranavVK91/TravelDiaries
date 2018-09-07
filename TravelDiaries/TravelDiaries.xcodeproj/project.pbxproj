@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3AD3A80234EB8EF5B8867356 /* Pods_TravelDiaries.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1853323A651A2C346FB03FC7 /* Pods_TravelDiaries.framework */; };
+		4329D9AA2142730300CC50DF /* TravelDiariesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4329D9A92142730300CC50DF /* TravelDiariesUITests.swift */; };
 		4337D3EB213E493F00D5A15F /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4337D3EA213E493F00D5A15F /* SwiftyJSON.framework */; };
 		4337D3ED213E64E700D5A15F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4337D3EC213E64E700D5A15F /* Constants.swift */; };
 		4337D3EF213E6DDC00D5A15F /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4337D3EE213E6DDC00D5A15F /* SDWebImage.framework */; };
@@ -32,6 +33,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		4329D9AC2142730300CC50DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 43544E5D213D425E00179EF8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 43544E64213D425E00179EF8;
+			remoteInfo = TravelDiaries;
+		};
 		43544E7D213D426100179EF8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 43544E5D213D425E00179EF8 /* Project object */;
@@ -45,6 +53,10 @@
 		0F4AFD2368D0AD7E6F862704 /* Pods-TravelDiaries-TravelDiariesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelDiaries-TravelDiariesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TravelDiaries-TravelDiariesTests/Pods-TravelDiaries-TravelDiariesTests.debug.xcconfig"; sourceTree = "<group>"; };
 		1853323A651A2C346FB03FC7 /* Pods_TravelDiaries.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TravelDiaries.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B2072A3DD62C0E4AA6C5B1B /* Pods-TravelDiaries.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelDiaries.release.xcconfig"; path = "Pods/Target Support Files/Pods-TravelDiaries/Pods-TravelDiaries.release.xcconfig"; sourceTree = "<group>"; };
+		4329D9A22142539900CC50DF /* TravelDiaries copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "TravelDiaries copy-Info.plist"; path = "/Users/wipro/Documents/Pranav/POC/Travel/TravelDiaries/TravelDiaries/TravelDiaries copy-Info.plist"; sourceTree = "<absolute>"; };
+		4329D9A72142730300CC50DF /* TravelDiariesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravelDiariesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4329D9A92142730300CC50DF /* TravelDiariesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelDiariesUITests.swift; sourceTree = "<group>"; };
+		4329D9AB2142730300CC50DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4337D3EA213E493F00D5A15F /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4337D3EC213E64E700D5A15F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		4337D3EE213E6DDC00D5A15F /* SDWebImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SDWebImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,6 +91,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4329D9A42142730300CC50DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		43544E62213D425E00179EF8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -108,14 +127,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4329D9A82142730300CC50DF /* TravelDiariesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4329D9A92142730300CC50DF /* TravelDiariesUITests.swift */,
+				4329D9AB2142730300CC50DF /* Info.plist */,
+			);
+			path = TravelDiariesUITests;
+			sourceTree = "<group>";
+		};
 		43544E5C213D425E00179EF8 = {
 			isa = PBXGroup;
 			children = (
 				43544E67213D425E00179EF8 /* TravelDiaries */,
 				43544E7F213D426100179EF8 /* TravelDiariesTests */,
+				4329D9A82142730300CC50DF /* TravelDiariesUITests */,
 				43544E66213D425E00179EF8 /* Products */,
 				EEC8E9462CBD54008BBEE74E /* Pods */,
 				69E13B61248587603A4A6B8F /* Frameworks */,
+				4329D9A22142539900CC50DF /* TravelDiaries copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -124,6 +154,7 @@
 			children = (
 				43544E65213D425E00179EF8 /* TravelDiaries.app */,
 				43544E7C213D426100179EF8 /* TravelDiariesTests.xctest */,
+				4329D9A72142730300CC50DF /* TravelDiariesUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -191,6 +222,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		4329D9A62142730300CC50DF /* TravelDiariesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4329D9AE2142730300CC50DF /* Build configuration list for PBXNativeTarget "TravelDiariesUITests" */;
+			buildPhases = (
+				4329D9A32142730300CC50DF /* Sources */,
+				4329D9A42142730300CC50DF /* Frameworks */,
+				4329D9A52142730300CC50DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4329D9AD2142730300CC50DF /* PBXTargetDependency */,
+			);
+			name = TravelDiariesUITests;
+			productName = TravelDiariesUITests;
+			productReference = 4329D9A72142730300CC50DF /* TravelDiariesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		43544E64213D425E00179EF8 /* TravelDiaries */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 43544E85213D426100179EF8 /* Build configuration list for PBXNativeTarget "TravelDiaries" */;
@@ -240,6 +289,10 @@
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = Wipro;
 				TargetAttributes = {
+					4329D9A62142730300CC50DF = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 43544E64213D425E00179EF8;
+					};
 					43544E64213D425E00179EF8 = {
 						CreatedOnToolsVersion = 9.4.1;
 					};
@@ -264,11 +317,19 @@
 			targets = (
 				43544E64213D425E00179EF8 /* TravelDiaries */,
 				43544E7B213D426100179EF8 /* TravelDiariesTests */,
+				4329D9A62142730300CC50DF /* TravelDiariesUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		4329D9A52142730300CC50DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		43544E63213D425E00179EF8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -375,6 +436,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4329D9A32142730300CC50DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4329D9AA2142730300CC50DF /* TravelDiariesUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		43544E61213D425E00179EF8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -400,6 +469,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		4329D9AD2142730300CC50DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 43544E64213D425E00179EF8 /* TravelDiaries */;
+			targetProxy = 4329D9AC2142730300CC50DF /* PBXContainerItemProxy */;
+		};
 		43544E7E213D426100179EF8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 43544E64213D425E00179EF8 /* TravelDiaries */;
@@ -419,6 +493,42 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		4329D9AF2142730300CC50DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TravelDiariesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = wipro.TravelDiariesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TravelDiaries;
+			};
+			name = Debug;
+		};
+		4329D9B02142730300CC50DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TravelDiariesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = wipro.TravelDiariesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TravelDiaries;
+			};
+			name = Release;
+		};
 		43544E83213D426100179EF8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -656,6 +766,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4329D9AE2142730300CC50DF /* Build configuration list for PBXNativeTarget "TravelDiariesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4329D9AF2142730300CC50DF /* Debug */,
+				4329D9B02142730300CC50DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		43544E60213D425E00179EF8 /* Build configuration list for PBXProject "TravelDiaries" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
