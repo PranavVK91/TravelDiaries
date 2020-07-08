@@ -1,0 +1,7 @@
+version: "Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
+options: "3697b6f0b7149ddaa1297789b81f0309"
+build_time: [1594198790, 532270000]
+inputs:
+  "/Users/pranav/Documents/Workspace/Excercise/ExcerciseApp/ExcerciseApp/ViewController.swift": [1594198786, 385299308]
+  "/Users/pranav/Documents/Workspace/Excercise/ExcerciseApp/ExcerciseApp/AppDelegate.swift": [1594198786, 374886159]
+  "/Users/pranav/Documents/Workspace/Excercise/ExcerciseApp/ExcerciseApp/SceneDelegate.swift": [1594198786, 381405837]
